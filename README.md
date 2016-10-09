@@ -21,7 +21,7 @@ Works with iOS 6 and even better in iOS 7 and later iOS version, because it let'
 
 ### Manually
 
-_**Important note if your project doesn't use ARC**: you must add the `-fobjc-arc` compiler flag to `MMPickerView.m` in Target Settings > Build Phases > Compile Sources._
+_**Important note if your project doesn't use ARC**: you must add the `-fobjc-arc` compiler flag to `AECNCityPickerView.m` in Target Settings > Build Phases > Compile Sources._
 
 * Drag the `AECNCityPickerView/AECNCityPickerView` folder into your project.
 * Make sure you have the **CoreGraphics** framework in your project.
@@ -47,7 +47,7 @@ You can show the PickerView:
 
 
 ### Customizing AECNCityPickerView
-Both show methods use a `NSDictionary` to set the options of the `AECNCityPickerView`. If you want a native looking PickerView, just `withOptions: nil`. In case of customization, use any of the different properties to customize the PickerView. All of the properties are optional, which means that if you only want to change one thing, like for eg the text color you can do like this, `withOptions: @{MMtextColor: [UIColor redColor]}`
+Both show methods use a `NSDictionary` to set the options of the `AECNCityPickerView`. If you want a native looking PickerView, just `withOptions: nil`. In case of customization, use any of the different properties to customize the PickerView. All of the properties are optional, which means that if you only want to change one thing, like for eg the text color you can do like this, `withOptions: @{AECNCityPickerView_textColor: [UIColor redColor]}`
 
 **Options**
 
