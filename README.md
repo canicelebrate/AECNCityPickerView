@@ -15,7 +15,7 @@ Works with iOS 6 and even better in iOS 7 and later iOS version, because it let'
 
 ### From CocoaPods
 
-* Add `pod 'AECNCityPickerView', '~> 0.0.1'` to your Podfile.
+* Add `pod 'AECNCityPickerView', '~> 0.0.2'` to your Podfile.
 * Install by running `pod install`
 * Include AECNCityPickerView by adding `#import <AECNCityPickerView.h>`
 
