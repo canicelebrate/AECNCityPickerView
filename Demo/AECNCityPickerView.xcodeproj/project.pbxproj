@@ -19,8 +19,11 @@
 		02D8FC55175F272000DE34E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D8FC54175F272000DE34E6 /* Foundation.framework */; };
 		02D8FC57175F272000DE34E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D8FC56175F272000DE34E6 /* CoreGraphics.framework */; };
 		C281A4AE1DA9503D00CB906A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C281A4AD1DA9503D00CB906A /* data.json */; };
-		C281A4B51DAA153200CB906A /* AECNCityPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C281A4B31DAA153200CB906A /* AECNCityPickerView.m */; };
-		C281A4B61DAA153200CB906A /* Asserts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281A4B41DAA153200CB906A /* Asserts.xcassets */; };
+		C281A4B81DAA1A1B00CB906A /* AECNCityPickerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C281A4B71DAA1A1B00CB906A /* AECNCityPickerView.podspec */; };
+		C281A4BA1DAA1A2A00CB906A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C281A4B91DAA1A2A00CB906A /* README.md */; };
+		C281A4BC1DAA1A4600CB906A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C281A4BB1DAA1A4600CB906A /* LICENSE */; };
+		C281A4C31DAA1B9000CB906A /* AECNCityPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C281A4C11DAA1B9000CB906A /* AECNCityPickerView.m */; };
+		C281A4C41DAA1B9000CB906A /* Asserts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281A4C21DAA1B9000CB906A /* Asserts.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +44,12 @@
 		02D8FC54175F272000DE34E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02D8FC56175F272000DE34E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C281A4AD1DA9503D00CB906A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		C281A4B21DAA153200CB906A /* AECNCityPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECNCityPickerView.h; sourceTree = "<group>"; };
-		C281A4B31DAA153200CB906A /* AECNCityPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECNCityPickerView.m; sourceTree = "<group>"; };
-		C281A4B41DAA153200CB906A /* Asserts.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asserts.xcassets; sourceTree = "<group>"; };
+		C281A4B71DAA1A1B00CB906A /* AECNCityPickerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AECNCityPickerView.podspec; sourceTree = "<group>"; };
+		C281A4B91DAA1A2A00CB906A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C281A4BB1DAA1A4600CB906A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C281A4C01DAA1B9000CB906A /* AECNCityPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECNCityPickerView.h; sourceTree = "<group>"; };
+		C281A4C11DAA1B9000CB906A /* AECNCityPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECNCityPickerView.m; sourceTree = "<group>"; };
+		C281A4C21DAA1B9000CB906A /* Asserts.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asserts.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,10 @@
 		02D8FC46175F271F00DE34E6 = {
 			isa = PBXGroup;
 			children = (
-				C281A4B11DAA153200CB906A /* AECNCityPickerView */,
+				C281A4BF1DAA1B9000CB906A /* AECNCityPickerView */,
+				C281A4BB1DAA1A4600CB906A /* LICENSE */,
+				C281A4B91DAA1A2A00CB906A /* README.md */,
+				C281A4B71DAA1A1B00CB906A /* AECNCityPickerView.podspec */,
 				02AE8217178AC20C00980090 /* Demo */,
 				02D8FC51175F272000DE34E6 /* Frameworks */,
 				02D8FC50175F272000DE34E6 /* Products */,
@@ -132,14 +141,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C281A4B11DAA153200CB906A /* AECNCityPickerView */ = {
+		C281A4BF1DAA1B9000CB906A /* AECNCityPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				C281A4B21DAA153200CB906A /* AECNCityPickerView.h */,
-				C281A4B31DAA153200CB906A /* AECNCityPickerView.m */,
-				C281A4B41DAA153200CB906A /* Asserts.xcassets */,
+				C281A4C01DAA1B9000CB906A /* AECNCityPickerView.h */,
+				C281A4C11DAA1B9000CB906A /* AECNCityPickerView.m */,
+				C281A4C21DAA1B9000CB906A /* Asserts.xcassets */,
 			);
-			path = AECNCityPickerView;
+			name = AECNCityPickerView;
+			path = ../AECNCityPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +214,10 @@
 				02AE8228178AC23E00980090 /* Default@2x.png in Resources */,
 				02AE8229178AC23E00980090 /* InfoPlist.strings in Resources */,
 				02AE8226178AC23E00980090 /* Default-568h@2x.png in Resources */,
+				C281A4C41DAA1B9000CB906A /* Asserts.xcassets in Resources */,
 				02AE8227178AC23E00980090 /* Default.png in Resources */,
-				C281A4B61DAA153200CB906A /* Asserts.xcassets in Resources */,
+				C281A4BC1DAA1A4600CB906A /* LICENSE in Resources */,
+				C281A4B81DAA1A1B00CB906A /* AECNCityPickerView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C281A4B51DAA153200CB906A /* AECNCityPickerView.m in Sources */,
 				02AE8240178AC6E300980090 /* AEAppDelegate.m in Sources */,
+				C281A4C31DAA1B9000CB906A /* AECNCityPickerView.m in Sources */,
+				C281A4BA1DAA1A2A00CB906A /* README.md in Sources */,
 				02AE8241178AC6E300980090 /* AETestViewController.m in Sources */,
 				02AE822A178AC23E00980090 /* main.m in Sources */,
 			);
