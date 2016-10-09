@@ -7,7 +7,7 @@ Works with iOS 6 and even better in iOS 7 and later iOS version, because it let'
 
 <br />
 
-![AECNCityPickerView](https://dl.dropboxusercontent.com/u/73895323/MMPickerView-GitHub.png)
+![AECNCityPickerView](https://github.com/canicelebrate/AECNCityPickerView/blob/master/AECNCityPickerView.png?raw=true)
 
 
 <br />
