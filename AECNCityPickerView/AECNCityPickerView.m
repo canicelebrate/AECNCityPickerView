@@ -281,7 +281,7 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     if(self.dataSource){
         NSInteger provinceIndex = [self.dataSource AECNCityPickerViewSelectedProvinceIndex:self];
         NSInteger cityIndex = [self.dataSource AECNCityPickerViewSelectedCityIndex:self];
-        NSInteger countryIndex = [self.dataSource AECNCityPickerViewSelectedCountryIndex:self];
+        NSInteger countryIndex = [self.dataSource AECNCityPickerViewSelectedCountyIndex:self];
         [_pickerView selectRow:provinceIndex inComponent:0 animated:YES];
         [_pickerView selectRow:cityIndex inComponent:1 animated:YES];
         [_pickerView selectRow:countryIndex inComponent:2 animated:YES];
@@ -305,22 +305,18 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     switch (component) {
         case 0:
             result = [_dataSource AECNCityPickerViewNumberOfProvinces:self];
-            NSLog(@"province count is:%ld",result);
             break;
         case 1:
         {
             result = [_dataSource AECNCityPickerView:self numberOfCitiesInProvince:self.selectedProvinceIndex];
-            NSLog(@"city count is:%ld",result);
         }
             break;
         case 2:
         {
-            result =  [_dataSource AECNCityPickerView:self numberOfCountriesInCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
-            NSLog(@"country count is:%ld",result);
+            result =  [_dataSource AECNCityPickerView:self numberOfCountiesInCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
         }
             break;
     }
-    //NSLog(@"Unknown component[%ld] found",component);
     return result;
 }
 
@@ -331,14 +327,11 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     switch (component) {
         case 0:
             result = [self.dataSource AECNCityPickerView:self titleForProvinceAtRow:row];
-            NSLog(@"province name is:%@",result);
             break;
         case 1:
             result =  [self.dataSource AECNCityPickerView:self titleForCityAtRow:row inProvince:self.selectedProvinceIndex];
-            NSLog(@"city name is:%@",result);
         case 2:
-            result = [self.dataSource AECNCityPickerView:self titleForCountryAtRow:row inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
-            NSLog(@"country name is:%@",result);
+            result = [self.dataSource AECNCityPickerView:self titleForCountyAtRow:row inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
             break;
         default:
             break;
@@ -422,7 +415,7 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
             strTitle = [self.dataSource AECNCityPickerView:self titleForCityAtRow:row inProvince:self.selectedProvinceIndex];
             break;
         case 2:
-            strTitle = [self.dataSource AECNCityPickerView:self titleForCountryAtRow:row inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
+            strTitle = [self.dataSource AECNCityPickerView:self titleForCountyAtRow:row inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
             break;
         default:
             break;
@@ -441,7 +434,7 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     AECNLeafRegion* region = [[AECNLeafRegion alloc] init];
     NSString* province = [self.dataSource AECNCityPickerView:self titleForProvinceAtRow:self.selectedProvinceIndex];
     NSString* city = [self.dataSource AECNCityPickerView:self titleForCityAtRow:self.selectedCityIndex inProvince:self.selectedProvinceIndex];
-    NSString* country = [self.dataSource AECNCityPickerView:self titleForCountryAtRow:self.selectedCountyIndex inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
+    NSString* country = [self.dataSource AECNCityPickerView:self titleForCountyAtRow:self.selectedCountyIndex inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
     
     region.province = province;
     region.city = city;

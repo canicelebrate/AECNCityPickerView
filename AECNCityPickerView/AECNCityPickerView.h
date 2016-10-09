@@ -40,16 +40,16 @@ extern NSString * const AECNCityPickerView_showsSelectionIndicator;
 @required
 -(NSInteger)AECNCityPickerViewNumberOfProvinces:(AECNCityPickerView*)pickerView;
 -(NSInteger)AECNCityPickerView:(AECNCityPickerView *)pickerView numberOfCitiesInProvince:(NSInteger)provinceIndex;
--(NSInteger)AECNCityPickerView:(AECNCityPickerView*)pickerView numberOfCountriesInCity:(NSInteger)cityIndex andInProvince:(NSInteger)provinceIndex;
+-(NSInteger)AECNCityPickerView:(AECNCityPickerView*)pickerView numberOfCountiesInCity:(NSInteger)cityIndex andInProvince:(NSInteger)provinceIndex;
 
 -(NSInteger)AECNCityPickerViewSelectedProvinceIndex:(AECNCityPickerView*)pickerView;
 -(NSInteger)AECNCityPickerViewSelectedCityIndex:(AECNCityPickerView*)pickerView;
--(NSInteger)AECNCityPickerViewSelectedCountryIndex:(AECNCityPickerView*)pickerView;
+-(NSInteger)AECNCityPickerViewSelectedCountyIndex:(AECNCityPickerView*)pickerView;
 
 
 - (NSString *)AECNCityPickerView: (AECNCityPickerView *)pickerView titleForProvinceAtRow:(NSInteger)row;
 - (NSString *)AECNCityPickerView: (AECNCityPickerView *)pickerView titleForCityAtRow:(NSInteger)row inProvince:(NSInteger)provinceIndex;
-- (NSString *)AECNCityPickerView: (AECNCityPickerView *)pickerView titleForCountryAtRow:(NSInteger)row inCity:(NSInteger)cityIndex andInProvince:(NSInteger)provinceIndex;
+- (NSString *)AECNCityPickerView: (AECNCityPickerView *)pickerView titleForCountyAtRow:(NSInteger)row inCity:(NSInteger)cityIndex andInProvince:(NSInteger)provinceIndex;
 
 
 @end
