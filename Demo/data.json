@@ -1,0 +1,86 @@
+[
+    {
+        "areaId": "2",
+        "areaName": "北京",
+        "cities": [
+            {
+                "areaId": "52",
+                "areaName": "北京",
+                "counties": [
+                    {
+                        "areaId": "500",
+                        "areaName": "东城区"
+                    },
+                    {
+                        "areaId": "501",
+                        "areaName": "西城区"
+                    },
+                    {
+                        "areaId": "502",
+                        "areaName": "海淀区"
+                    },
+                    {
+                        "areaId": "503",
+                        "areaName": "朝阳区"
+                    },
+                    {
+                        "areaId": "504",
+                        "areaName": "崇文区"
+                    },
+                    {
+                        "areaId": "505",
+                        "areaName": "宣武区"
+                    },
+                    {
+                        "areaId": "506",
+                        "areaName": "丰台区"
+                    },
+                    {
+                        "areaId": "507",
+                        "areaName": "石景山区"
+                    },
+                    {
+                        "areaId": "508",
+                        "areaName": "房山区"
+                    },
+                    {
+                        "areaId": "509",
+                        "areaName": "门头沟区"
+                    },
+                    {
+                        "areaId": "510",
+                        "areaName": "通州区"
+                    },
+                    {
+                        "areaId": "511",
+                        "areaName": "顺义区"
+                    },
+                    {
+                        "areaId": "512",
+                        "areaName": "昌平区"
+                    },
+                    {
+                        "areaId": "513",
+                        "areaName": "怀柔区"
+                    },
+                    {
+                        "areaId": "514",
+                        "areaName": "平谷区"
+                    },
+                    {
+                        "areaId": "515",
+                        "areaName": "大兴区"
+                    },
+                    {
+                        "areaId": "516",
+                        "areaName": "密云县"
+                    },
+                    {
+                        "areaId": "517",
+                        "areaName": "延庆县"
+                    }
+                ]
+            }
+        ]
+    }
+]
