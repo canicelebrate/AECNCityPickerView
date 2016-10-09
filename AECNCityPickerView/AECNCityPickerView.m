@@ -1,6 +1,6 @@
 //
-//  MMPickerView.m
-//  MMPickerView
+//  AECNCityPickerView.m
+//  AECNCityPickerView
 //
 //  Created by William Wang on 10/08/16.
 //  Copyright (c) 2016 AmberEase Co.,Ltd. All rights reserved.
