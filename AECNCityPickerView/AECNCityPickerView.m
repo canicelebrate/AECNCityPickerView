@@ -281,13 +281,13 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     if(self.dataSource){
         NSInteger provinceIndex = [self.dataSource AECNCityPickerViewSelectedProvinceIndex:self];
         NSInteger cityIndex = [self.dataSource AECNCityPickerViewSelectedCityIndex:self];
-        NSInteger countryIndex = [self.dataSource AECNCityPickerViewSelectedCountyIndex:self];
+        NSInteger countyIndex = [self.dataSource AECNCityPickerViewSelectedCountyIndex:self];
         [_pickerView selectRow:provinceIndex inComponent:0 animated:YES];
         [_pickerView selectRow:cityIndex inComponent:1 animated:YES];
-        [_pickerView selectRow:countryIndex inComponent:2 animated:YES];
+        [_pickerView selectRow:countyIndex inComponent:2 animated:YES];
         self.selectedProvinceIndex = provinceIndex;
         self.selectedCityIndex = cityIndex;
-        self.selectedCountyIndex = countryIndex;
+        self.selectedCountyIndex = countyIndex;
     }
     else{
         NSLog(@"dataSource of AECNCityPickerView is missing!");
@@ -437,11 +437,11 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
     AECNLeafRegion* region = [[AECNLeafRegion alloc] init];
     NSString* province = [self.dataSource AECNCityPickerView:self titleForProvinceAtRow:self.selectedProvinceIndex];
     NSString* city = [self.dataSource AECNCityPickerView:self titleForCityAtRow:self.selectedCityIndex inProvince:self.selectedProvinceIndex];
-    NSString* country = [self.dataSource AECNCityPickerView:self titleForCountyAtRow:self.selectedCountyIndex inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
+    NSString* county = [self.dataSource AECNCityPickerView:self titleForCountyAtRow:self.selectedCountyIndex inCity:self.selectedCityIndex andInProvince:self.selectedProvinceIndex];
     
     region.province = province;
     region.city = city;
-    region.county = country;
+    region.county = county;
     
     region.provinceIndex = self.selectedProvinceIndex;
     region.cityIndex = self.selectedCityIndex;
