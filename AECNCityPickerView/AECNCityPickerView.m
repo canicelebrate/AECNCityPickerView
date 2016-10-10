@@ -282,12 +282,15 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
         NSInteger provinceIndex = [self.dataSource AECNCityPickerViewSelectedProvinceIndex:self];
         NSInteger cityIndex = [self.dataSource AECNCityPickerViewSelectedCityIndex:self];
         NSInteger countyIndex = [self.dataSource AECNCityPickerViewSelectedCountyIndex:self];
-        [_pickerView selectRow:provinceIndex inComponent:0 animated:YES];
-        [_pickerView selectRow:cityIndex inComponent:1 animated:YES];
-        [_pickerView selectRow:countyIndex inComponent:2 animated:YES];
         self.selectedProvinceIndex = provinceIndex;
+        [_pickerView selectRow:provinceIndex inComponent:0 animated:YES];
+        
         self.selectedCityIndex = cityIndex;
+        [_pickerView selectRow:cityIndex inComponent:1 animated:YES];
+        
         self.selectedCountyIndex = countyIndex;
+        [_pickerView selectRow:countyIndex inComponent:2 animated:YES];
+        
     }
     else{
         NSLog(@"dataSource of AECNCityPickerView is missing!");

@@ -1,7 +1,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "AECNCityPickerView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "An China city picker by customizing UIPickerView for your iOS app."
   s.description  = "An easy to use and customizable pick city view component that presents a `UIPickerView` with a toolbar, Done button, animation, design options,."
   s.homepage     = "http://github.com/canicelebrate/AECNCityPickerView"
