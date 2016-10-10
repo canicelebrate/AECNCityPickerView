@@ -1,7 +1,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "AECNCityPickerView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An China city picker by customizing UIPickerView for your iOS app."
   s.description  = "An easy to use and customizable pick city view component that presents a `UIPickerView` with a toolbar, Done button, animation, design options,."
   s.homepage     = "http://github.com/canicelebrate/AECNCityPickerView"
@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/canicelebrate/AECNCityPickerView.git", :tag => s.version }
   s.platform     = :ios, '6.0'
   s.source_files = 'AECNCityPickerView/*.{h,m}'
+  s.resources = "AECNCityPickerView/Assets/*.xcassets"
   s.framework  = 'CoreGraphics'
   s.requires_arc = true
 end

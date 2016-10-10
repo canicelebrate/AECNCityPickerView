@@ -349,11 +349,14 @@ NSString * const AECNCityPickerView_showsSelectionIndicator = @"showsSelectionIn
             self.selectedCountyIndex = 0;
             [pickerView reloadComponent:1];
             [pickerView reloadComponent:2];
+            [pickerView selectRow:0 inComponent:1 animated:YES];
+            [pickerView selectRow:0 inComponent:2 animated:YES];
             break;
         case 1:
             self.selectedCityIndex = row;
             self.selectedCountyIndex = 0;
             [pickerView reloadComponent:2];
+            [pickerView selectRow:0 inComponent:2 animated:YES];
             break;
         case 2:
             self.selectedCountyIndex = row;
