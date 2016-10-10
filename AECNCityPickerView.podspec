@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/canicelebrate/AECNCityPickerView.git", :tag => s.version }
   s.platform     = :ios, '6.0'
   s.source_files = 'AECNCityPickerView/*.{h,m}'
-  s.resources = "AECNCityPickerView/Assets/*.xcassets"
+  s.resources = "AECNCityPickerView/*.xcassets"
   s.framework  = 'CoreGraphics'
   s.requires_arc = true
 end
